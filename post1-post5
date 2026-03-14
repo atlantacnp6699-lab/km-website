@@ -1,0 +1,9 @@
+<h3>แสดงความคิดเห็น</h3>
+
+<input id="commentName" placeholder="ชื่อ">
+
+<textarea id="commentText"></textarea>
+
+<button onclick="addComment()">ส่งความคิดเห็น</button>
+
+<div id="commentList"></div>
