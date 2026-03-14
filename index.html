@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
+
 <head>
+
 <meta charset="UTF-8">
+
 <title>ระบบการจัดการความรู้</title>
+
 <link rel="stylesheet" href="style.css">
+
+<script src="data.js"></script>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>ระบบการจัดการความรู้</h1>
+
 </header>
 
 <div class="wrapper">
@@ -17,52 +26,109 @@
 <div class="content">
 
 <div class="post">
+
 <h2>การสื่อสารกับบรรณาธิการ & Reviewer</h2>
+
+<div class="meta">Admin | 2026</div>
+
 <p>
 การสื่อสารกับบรรณาธิการของวารสารเป็นขั้นตอนสำคัญ
-ในการเผยแพร่บทความวิชาการ ผู้เขียนควรตอบข้อเสนอแนะ
-อย่างสุภาพและชัดเจน
+ในการเผยแพร่บทความวิจัย ผู้เขียนควรตอบข้อเสนอแนะ
+อย่างสุภาพและมีเหตุผล
 </p>
+
 <a href="post1.html">อ่านเพิ่มเติม</a>
+
 </div>
 
 <div class="post">
+
 <h2>การเขียนภาษาอังกฤษเชิงวิชาการ</h2>
+
+<div class="meta">Admin | 2026</div>
+
 <p>
 การเขียนภาษาอังกฤษเชิงวิชาการต้องใช้คำศัพท์ที่เหมาะสม
 และโครงสร้างประโยคที่ชัดเจน
 </p>
+
 <a href="post2.html">อ่านเพิ่มเติม</a>
+
 </div>
 
 <div class="post">
+
 <h2>องค์ประกอบบทความวิจัย</h2>
+
+<div class="meta">Admin | 2026</div>
+
 <p>
-บทความวิจัยควรประกอบด้วยบทคัดย่อ บทนำ วิธีวิจัย
-ผลการวิจัย และการอภิปรายผล
+บทความวิจัยควรประกอบด้วยบทคัดย่อ
+บทนำ วิธีวิจัย และผลการวิจัย
 </p>
+
 <a href="post3.html">อ่านเพิ่มเติม</a>
+
+</div>
+
+<div class="pagination">
+
+<a>1</a>
+
+<a href="page2.html">2</a>
+
+<a href="page2.html">Next</a>
+
 </div>
 
 </div>
 
 <div class="sidebar">
 
+<div class="box">
+
 <h3>ค้นหา</h3>
-<input placeholder="ค้นหาบทความ">
+
+<input
+id="searchInput"
+onkeyup="searchPost()"
+class="search"
+placeholder="ค้นหา">
+
+<ul id="searchResult"></ul>
+
+</div>
+
+<div class="box">
 
 <h3>บทความล่าสุด</h3>
+
 <ul>
-<li><a href="post1.html">การสื่อสารกับ Reviewer</a></li>
+
+<li><a href="post1.html">การสื่อสารกับบรรณาธิการ</a></li>
 <li><a href="post2.html">การเขียนอังกฤษเชิงวิชาการ</a></li>
 <li><a href="post3.html">องค์ประกอบบทความวิจัย</a></li>
-<li><a href="post4.html">การใช้ AI Tools</a></li>
+<li><a href="post4.html">AI Tools</a></li>
 <li><a href="post5.html">Interactive Media</a></li>
+
 </ul>
 
 </div>
 
+<div class="box">
+
+<h3>ความคิดเห็นล่าสุด</h3>
+
+<div id="commentList"></div>
+
 </div>
 
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
